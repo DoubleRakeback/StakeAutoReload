@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "Stake Reload Auto Claim",
+  "version": "1.1",
+  "description": "Automatically claim your stake VIP reloads! Have your VIP host set 10m reloads and maximize your return! - DoubleRakeback.com",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://stake.com/*",
+        "https://stake.ac/*",
+        "https://stake.games/*",
+        "https://stake.bet/*",
+        "https://stake.mba/*",
+        "https://stake.jp/*",
+        "https://stake.kim/*",
+        "https://stakeru.com/*",
+        "https://stake.bz/*",
+        "https://staketr.com/*",
+        "https://stake.ceo/*",
+        "https://stake.best/*",
+        "https://stake.krd/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "host_permissions": [
+    "https://stake.com/*",
+    "https://stake.ac/*",
+    "https://stake.games/*",
+    "https://stake.bet/*",
+    "https://stake.mba/*",
+    "https://stake.jp/*",
+    "https://stake.kim/*",
+    "https://stakeru.com/*",
+    "https://stake.bz/*",
+    "https://staketr.com/*",
+    "https://stake.ceo/*",
+    "https://stake.best/*",
+    "https://stake.krd/*"
+  ]
+}
